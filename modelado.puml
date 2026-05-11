@@ -1,7 +1,7 @@
 @startuml
 skinparam classAttributeIconSize 0
 
-class Pila {
+class Pila{
   - elementos: list
   + Pila()
   + push(elemento: Object): void
@@ -13,7 +13,7 @@ class Pila {
   + pushAll(otraPila: Pila): void
 }
 
-class Cola {
+class Cola{
   - elementos: list
   + Cola()
   + push(elemento: Object): void
@@ -25,13 +25,13 @@ class Cola {
   + pushAll(otraCola: Cola): void
 }
 
-class Persona {
+class Persona{
   - nombre: str
   + Persona(nombre: str)
   + getNombre(): str
 }
 
-class CajaBanco {
+class CajaBanco{
   + main(): void
 }
 
@@ -39,5 +39,6 @@ class CajaBanco {
 CajaBanco ..> Cola : usa >
 CajaBanco ..> Persona : crea >
 Cola o-- Persona : contiene >
+
 
 @enduml
