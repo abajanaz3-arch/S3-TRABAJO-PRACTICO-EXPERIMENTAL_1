@@ -30,6 +30,11 @@ class Persona{
   + Persona(nombre: str)
   + getNombre(): str
 }
+class Cliente {
+  - tipo: str
+  + Cliente(nombre: str, tipo: str)
+  + get_tipo(): str
+}
 
 class CajaBanco{
   + main(): void
