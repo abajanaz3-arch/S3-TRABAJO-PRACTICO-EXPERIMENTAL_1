@@ -47,3 +47,21 @@ class Pila:
     def pushAll(self, otraPila):
         for elemento in otraPila.__elementos:
             self.push(elemento)
+            
+def contiene(self, elemento: object) -> bool:
+     
+        for item in self.__elementos:
+            if item == elemento:
+                return True
+        return False
+
+def copiar(self):
+        
+        nueva_pila = Pila()
+        for item in self.__elementos:
+            nueva_pila.push(item)
+        return nueva_pila
+
+def __str__(self) -> str:
+        
+        return f"Pila({self.__elementos})"

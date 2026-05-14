@@ -47,3 +47,21 @@ class Cola:
     def pushAll(self, otraCola):
         for elemento in otraCola.__elementos:
             self.push(elemento)
+            
+def contiene(self, elemento: object) -> bool:
+        
+        for item in self.__elementos:
+            if item == elemento:
+                return True
+        return False
+
+def copiar(self):
+      
+        nueva_cola = Cola()
+        for item in self.__elementos:
+            nueva_cola.push(item)
+        return nueva_cola
+
+def __str__(self) -> str:
+       
+        return f"Cola({self.__elementos})"
